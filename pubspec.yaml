@@ -23,6 +23,8 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
+  http: ^0.11.3+16
+  cached_network_image: ^1.1.0
 
 dev_dependencies:
   flutter_test:
@@ -70,3 +72,39 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+  assets:
+  - assets/images/monsters/anjanath.jpg
+  - assets/images/monsters/zorah-magdaros.jpg
+  - assets/images/monsters/xeno'jiiva.jpg
+  - assets/images/monsters/vaal-hazak.jpg
+  - assets/images/monsters/uragaan.jpg
+  - assets/images/monsters/tzitzi-ya-ku.jpg
+  - assets/images/monsters/tobi-kadachi.jpg
+  - assets/images/monsters/teostra.jpg
+  - assets/images/monsters/rathian.jpg
+  - assets/images/monsters/rathalos.jpg
+  - assets/images/monsters/radobaan.jpg
+  - assets/images/monsters/pukei-pukei.jpg
+  - assets/images/monsters/pink-rathian.jpg
+  - assets/images/monsters/paolumu.jpg
+  - assets/images/monsters/odogaron.jpg
+  - assets/images/monsters/nergigante.jpg
+  - assets/images/monsters/legiana.jpg
+  - assets/images/monsters/lavasioth.jpg
+  - assets/images/monsters/kushala-daora.jpg
+  - assets/images/monsters/kulu-ya-ku.jpg
+  - assets/images/monsters/kirin.jpg
+  - assets/images/monsters/jyuratodus.jpg
+  - assets/images/monsters/great-jagras.jpg
+  - assets/images/monsters/great-girros.jpg
+  - assets/images/monsters/dodogama.jpg
+  - assets/images/monsters/diablos.jpg
+  - assets/images/monsters/black-diablos.jpg
+  - assets/images/monsters/bazelgeuse.jpg
+  - assets/images/monsters/barroth.jpg
+  - assets/images/monsters/azure-rathalos.jpg
+  - assets/images/monsters/behemoth.jpg
+  - assets/images/monsters/deviljho.jpg
+  - assets/images/monsters/kulve-taroth.jpg
+  - assets/images/monsters/lunastra.jpg
