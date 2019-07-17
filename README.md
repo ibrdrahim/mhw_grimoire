@@ -1,16 +1,18 @@
-# mhw_grimoire
+# mhw grimoire
 
-A new Flutter project.
+A guide book for monster hunter world, build in flutter
 
-## Getting Started
+# Terms of use
+Monster Hunter™ is a registered trademark or trademark of Capcom Co., Ltd.
 
-This project is a starting point for a Flutter application.
+All data and images are taken from:
 
-A few resources to get you started if this is your first Flutter project:
+http://mhw-db.com
+https://monsterhunter.fandom.com/wiki
+http://fr.mogapedia.wikia.com/wiki/Wikia_Monster_Hunter
+http://kiranico.com
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+![2019-07-17 09 57 55](https://user-images.githubusercontent.com/15310920/61344100-48101200-a87a-11e9-9d2b-bf4a124c3e2c.jpg)
+![2019-07-17 09 58 00](https://user-images.githubusercontent.com/15310920/61344101-48101200-a87a-11e9-8719-e43b3d34f3ed.jpg)
+![2019-07-17 09 58 04](https://user-images.githubusercontent.com/15310920/61344103-48101200-a87a-11e9-8cab-f7ec22d7751f.jpg)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
