@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'MHW Grimoire',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -42,7 +42,7 @@ class _HomePage extends State<HomePage> {
     return Scaffold(
         appBar: AppBar(
             //leading: Icon(Icons.home),
-            backgroundColor: Colors.orange,
+            backgroundColor: Colors.blue,
             title: Text("MHW Grimoire")),
         body:
          ListView(
