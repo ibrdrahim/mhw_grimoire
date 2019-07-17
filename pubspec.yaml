@@ -108,3 +108,19 @@ flutter:
   - assets/images/monsters/deviljho.jpg
   - assets/images/monsters/kulve-taroth.jpg
   - assets/images/monsters/lunastra.jpg
+  - assets/images/commons/weapon.png
+  - assets/images/commons/armor.png
+  - assets/images/commons/location.jpg
+  - assets/images/commons/monster.png
+  - assets/images/status/blast.png
+  - assets/images/status/bleed.png
+  - assets/images/status/dragon.png
+  - assets/images/status/effluvial.png
+  - assets/images/status/fire.png
+  - assets/images/status/ice.png
+  - assets/images/status/paralysis.png
+  - assets/images/status/poison.png
+  - assets/images/status/sleep.png
+  - assets/images/status/stun.png
+  - assets/images/status/thunder.png
+  - assets/images/status/water.png

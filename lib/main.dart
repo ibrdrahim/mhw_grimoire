@@ -44,16 +44,15 @@ class _HomePage extends State<HomePage> {
             //leading: Icon(Icons.home),
             backgroundColor: Colors.orange,
             title: Text("MHW Grimoire")),
-        body: Container(
-          child : Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
+        body:
+         ListView(
+            padding: const EdgeInsets.all(8.0),
             children: <Widget>[
-              CardMenu(title: "Monster",icon: Icons.android,color: Colors.greenAccent,navigation: ""),
-              CardMenu(title: "Equip",icon: Icons.settings_input_component,color: Colors.grey,navigation: ""),
-              CardMenu(title: "Weapon",icon: Icons.ac_unit,color: Colors.blue,navigation: ""),
-              CardMenu(title: "Location",icon: Icons.location_on,color: Colors.redAccent,navigation: ""),
+              CardMenu(title: "Monster",icon: "assets/images/commons/monster.png",color: Colors.greenAccent,navigation: ""),
+              CardMenu(title: "Armor",icon: "assets/images/commons/armor.png",color: Colors.grey,navigation: ""),
+              CardMenu(title: "Weapon",icon: "assets/images/commons/weapon.png",color: Colors.blue,navigation: ""),
+              CardMenu(title: "Location",icon:"assets/images/commons/location.jpg",color: Colors.redAccent,navigation: ""),
             ],
-          )
         ));
   }
 }
@@ -63,7 +62,7 @@ class CardMenu extends StatelessWidget {
   CardMenu({this.title,this.icon,this.color,this.navigation});
 
   final String title;
-  final IconData icon;
+  final String icon;
   final Color color;
   final String navigation;
 
@@ -72,20 +71,32 @@ class CardMenu extends StatelessWidget {
     return 
     GestureDetector(
       onTap: (){
-        Navigator.push(context, 
-          MaterialPageRoute(builder: (context) => MonsterPage(title:this.title,color:this.color)),
-        );
+
+        if (this.title == "Monster") {
+          Navigator.push(context, 
+            MaterialPageRoute(builder: (context) => MonsterPage(title:this.title,color:this.color)),
+          );
+        } else {
+          Navigator.push(context, 
+            MaterialPageRoute(builder: (context) => 
+              Scaffold(
+                appBar: AppBar(title: Text(this.title)),
+                body: Center(child : Text("Coming Soon",style: TextStyle(fontSize: 40,color: Colors.blue),)),
+              )
+            ),
+          );
+        }
       },
       child: 
         Card( 
-                    child: Column(
-                      children: <Widget>[
-                        Icon(this.icon,size: 50,color: this.color),
-                        Text(this.title,
-                        style: new TextStyle(color: this.color, fontSize: 28.0))
-                      ],
-                    ),
-                  )
+          child: Column(
+            children: <Widget>[
+              Image.asset(icon,height: 100,),
+              Text(this.title,
+              style: new TextStyle(color: this.color, fontSize: 28.0))
+            ],
+          ),
+        )
     );
   }
 }

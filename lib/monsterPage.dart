@@ -3,6 +3,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:mhw_grimoire/monster.dart';
 import 'package:mhw_grimoire/API.dart';
+import 'package:mhw_grimoire/monsterDetail.dart';
 
 void main() => runApp(MonsterPage());
 
@@ -53,20 +54,24 @@ class _MonsterListState extends State {
         body: ListView.builder(
           itemCount: monsters.length,
           itemBuilder: (context, index) {
-            print(monsters[index].name);
             return 
-              Card( 
-                  child: Column(
-                    children: <Widget>[
-                      Image.asset("assets/images/monsters/${monsters[index].name.replaceAll(" ", "-").toLowerCase()}.jpg"),
-                      Text(monsters[index].name,
-                      style: new TextStyle(color: Colors.blue, fontSize: 28.0)),
-                      Padding(
-                        padding: EdgeInsets.only(bottom: 20),
-                      )
-                    ],
+              GestureDetector(
+                onTap: (){
+                  Navigator.push(context, 
+                    MaterialPageRoute(builder: (context) => MonsterDetail(monster: monsters[index],)),
+                  );
+                },
+                child: 
+                  Card( 
+                  child: ListTile(
+                    leading: Image.asset("assets/images/monsters/${monsters[index].name.replaceAll(" ", "-").toLowerCase()}.jpg"),
+                    title: Text(monsters[index].name),
+                    subtitle: Text(
+                      monsters[index].description
+                    ),
                   ),
-                );
+                )
+              );
           },
         ));
   }
